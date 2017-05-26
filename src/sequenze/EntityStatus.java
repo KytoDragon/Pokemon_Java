@@ -1,0 +1,45 @@
+package sequenze;
+
+public enum EntityStatus {
+	STANDING,
+	WALKING,
+	RUNNING,
+	BIKE_IDLE,
+	BIKE_ON,
+	BIKE_OFF,
+	BIKE_DRIVE,
+	BIKE_JUMP,
+	BIKE_BUMP,
+	BIKE_SLIDING,
+	FALLING_ON,
+	FALLING_OFF,
+	SLIDING,
+	ROLLING,
+	JUMPING,
+	SURFER_ON,
+	SURFER_OFF,
+	SURFER_IDLE,
+	SURFER,
+	BUMP,
+	CLIMBING_ON,
+	CLIMBING_OFF,
+	CLIMBING_UP,
+	CLIMBING_DOWN,
+	KASKADE_ON,
+	KASKADE_OFF,
+	KASKADE_UP,
+	KASKADE_DOWN,
+	FLY_ON,
+	FLY_OFF,
+	DIVE_ON,
+	DIVE_OFF,
+	DIVE_DEEPER,
+	DIVE_IDLE,
+	DIVE,
+	WATER_SPIN;
+	
+	public static int length(){
+		return values().length;
+	}
+	
+}

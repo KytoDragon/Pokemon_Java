@@ -1,0 +1,11 @@
+1
+New Event;2;7;0;1
+0;0;;0;0;7;true;0;0
+
+Sound.startBGM("101-opening.mp3")
+wait(120)
+Sound.fadeOutBGM(80)
+wait(320)
+Sound.unpauseBGM()
+wait(200)
+Sound.stopBGM()

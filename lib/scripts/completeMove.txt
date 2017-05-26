@@ -1,0 +1,6 @@
+4
+Controll.setSysFlag(10, true)
+while Controll.getSysFlag(10) do
+wait(1)
+done
+

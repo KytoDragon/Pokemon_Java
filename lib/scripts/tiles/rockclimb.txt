@@ -1,0 +1,12 @@
+11
+Input.ask("Wanne rock climb?")
+wait(1)
+if Controll.getSysFlag(11) then
+Text.say("Rock climb!")
+wait(1)
+player = World.getPlayer()
+player.setStatus("CLIMB_ON")
+player.move()
+else
+Text.say("No rock climb.")
+fi

@@ -1,0 +1,25 @@
+24
+Input.selectItem()
+wait(1)
+Input.clear()
+wait(1)
+if Controll.getSysFlag(11) == false then
+return
+fi
+new_item = Controll.getSysVar(10)
+old_item = this.getItemId()
+if old_item == 0 then
+this.setItemId(new_item)
+Bag.remove(new_item, 1)
+Text.say(this.getName().." was given the\n"..Localisation.getItem(new_item).." to hold.")
+return
+fi
+Input.ask(this.getName().." is already holding\na "..Localisation.getItem(old_item)..".\rWould you like to switch the\ntwo items?")
+wait(1)
+if Controll.getSysFlag(11) == false then
+return
+fi
+this.setItemId(new_item)
+Bag.remove(new_item, 1)
+Bag.add(old_item, 1)
+Text.say("The "..Localisation.getItem(old_item).." was taken and\nreplaced with the "..Localisation.getItem(new_item)..".")

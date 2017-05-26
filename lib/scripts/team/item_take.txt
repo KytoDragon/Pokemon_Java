@@ -1,0 +1,9 @@
+8
+item = this.getItemId()
+if item == 0 then
+Text.say(this.getName().." isn't holding\nanything.")
+return
+fi
+Bag.add(item, 1)
+this.setItemId(0)
+Text.say("Recieved the "..Localisation.getItem(item).."\nfrom "..this.getName()..".")

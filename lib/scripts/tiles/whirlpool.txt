@@ -1,0 +1,2 @@
+1
+Text.say("The current is too strong.")

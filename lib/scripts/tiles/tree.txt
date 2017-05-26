@@ -1,0 +1,8 @@
+7
+Input.ask("Wanne headbutt?")
+wait(1)
+if Controll.getSysFlag(11) then
+Text.say("Headbutt!")
+else
+Text.say("No headbutt.")
+fi
